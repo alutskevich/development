@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/jquery-1.11.2.js"></script>
+        <script src="js/cus-select.js"></script>
+        <script>
+            $(document).ready(function(){
+               $(".select_block").cusSelect({
+                   selectSelector: "#select"
+               });
+            });
+        </script>
+        <title>Cus-select.js</title>
+    </head>
+    <body>
+        <select name="name" id="select">
+            <option value="t1">Type1</option>
+            <option value="t2">Type2</option>
+            <option value="t3">Type3</option>
+            <option value="t4">Type4</option>
+        </select>
+        <div class="select_block">
+            <p class="value">Cuisine Type</p>
+            <ul class="list">
+                <li class="item">Type1</li>
+                <li class="item">Type2</li>
+                <li class="item">Type3</li>
+                <li class="item">Type4</li>
+            </ul>
+        </div>
+    </body>
+</html>
